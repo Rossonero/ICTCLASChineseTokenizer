@@ -26,11 +26,11 @@ public class ICTCLAS50 {
         String dllpath = "";
         // For Unix
         if (Gate.runningOnUnix() == true) {
-            dllpath = path + "/plugins/ICTACLASChineseTokenizer/lib/libICTCLAS50.so";
+            dllpath = path + "/plugins/ICTCLASChineseTokenizer/lib/libICTCLAS50.so";
         }
         // For Windows
         else {
-            dllpath = path + "\\plugins\\ICTACLASChineseTokenizer\\lib\\ICTCLAS50.dll";
+            dllpath = path + "\\plugins\\ICTCLASChineseTokenizer\\lib\\ICTCLAS50.dll";
         }
 
         System.load(dllpath);

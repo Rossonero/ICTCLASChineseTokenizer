@@ -38,7 +38,7 @@ import java.util.regex.*;
  */
 
 
-@CreoleResource(name = "ICTCLAS Chinese Tokenizer", comment = "A customisable Chinese ChineseTokenizer.", icon = "shefTokeniser")
+@CreoleResource(name = "ICTCLAS Chinese Tokenizer", icon = "shefTokeniser")
 public class ICTCLASChineseTokenizer extends AbstractLanguageAnalyser {
 
     public static final String

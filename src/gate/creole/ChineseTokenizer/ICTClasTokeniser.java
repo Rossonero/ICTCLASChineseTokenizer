@@ -31,16 +31,15 @@ public class ICTClasTokeniser {
         // Set Resource Path
         String argu = System.getProperty("user.dir");
         if (Gate.runningOnUnix() == true) {
-            argu = argu + "/plugins/ICTACLASChineseTokenizer/lib";
+            argu = argu + "/plugins/ICTCLASChineseTokenizer/lib";
         }
         // For Windows
         else {
-            argu = argu + "\\plugins\\ICTACLASChineseTokenizer\\lib";
+            argu = argu + "\\plugins\\ICTCLASChineseTokenizer\\lib";
         }
-            System.out.println(argu+encoding);
         //Try Init
         try {
-            if (ICTCLAS50Tokeniser.ICTCLAS_Init(argu.getBytes("GB2312")) == false) {
+            if (ICTCLAS50Tokeniser.ICTCLAS_Init(argu.getBytes(encoding)) == false) {
                 System.out.println("ICTCLAS Init Fail!!!!");
                 return false;
             }
