@@ -31,11 +31,11 @@ public class ICTClasTokeniser {
         // Set Resource Path
         String argu = System.getProperty("user.dir");
         if (Gate.runningOnUnix() == true) {
-            argu = argu + "/plugins/ChineseTokenizer/lib";
+            argu = argu + "/plugins/ICTACLASChineseTokenizer/lib";
         }
         // For Windows
         else {
-            argu = argu + "\\plugins\\ChineseTokenizer\\lib";
+            argu = argu + "\\plugins\\ICTACLASChineseTokenizer\\lib";
         }
             System.out.println(argu+encoding);
         //Try Init

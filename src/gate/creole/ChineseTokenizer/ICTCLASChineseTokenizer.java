@@ -38,8 +38,8 @@ import java.util.regex.*;
  */
 
 
-@CreoleResource(name = "Chinese ChineseTokenizer", comment = "A customisable Chinese ChineseTokenizer.", helpURL = "http://gatechinese.com", icon = "ChineseTokenizer")
-public class ChineseTokenizer extends AbstractLanguageAnalyser {
+@CreoleResource(name = "ICTCLAS Chinese Tokenizer", comment = "A customisable Chinese ChineseTokenizer.", icon = "shefTokeniser")
+public class ICTCLASChineseTokenizer extends AbstractLanguageAnalyser {
 
     public static final String
             DEF_TOK_DOCUMENT_PARAMETER_NAME = "document";
@@ -50,7 +50,7 @@ public class ChineseTokenizer extends AbstractLanguageAnalyser {
     public static final String
             DEF_TOK_ENCODING_PARAMETER_NAME = "encoding";
 
-    public ChineseTokenizer() {
+    public ICTCLASChineseTokenizer() {
     }
 
     /**
